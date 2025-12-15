@@ -9,64 +9,27 @@
     --cor-branco: #FFFFFF;
 }
 
-
-body {
-    margin: 0;
-    background: var(--cor-branco); /* AGORA TUDO É BRANCO */
-    font-family: 'Roboto Condensed', sans-serif;
-    color: var(--cor-preto);
+#body {
+    background-color: var(--cor-azulclaro);
 }
-
-.titulo-secao {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-}
-
-
-#topo {
-    background: var(--cor-lilas);
-    color: var(--cor-preto);
-}
-
-
-.habilidades-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.habilidade-item {
-    background: var(--cor-escura);
-    color: var(--cor-branco);
-    padding: 8px 14px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: 0.3s ease;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.habilidade-item:hover {
-    background: var(--cor-principal);
-}
-
-
-#conteudo-branco {
-    background: var(--cor-branco) !important;
-    width: 100%;
-    padding-top: 40px;
-}
-
-.card img {
-    border-bottom: 1px solid #eee;
-}
-
 
 #rodape {
-    background: var(--cor-escura);
+    background-color: var(--cor-escura);
     color: var(--cor-branco);
-    text-align: center;
-    padding: 20px;
-    font-family: 'Montserrat', sans-serif;
+}
+
+#ancora {
+    text-decoration: none;
+    color: var(--cor-branco);
+    font-size: 20px;
+    transition:  color 0.3s ease;
+}
+#ancora:hover {
+    color: var(--cor-principal);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.habilidades {
+    text-decoration: none;
 }
