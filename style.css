@@ -11,23 +11,23 @@
 }
 
 #body {
-    background-color: var(--#ffe6ff);
+    background-color: var(--cor-beje);
 }
 
 #rodape {
-    background-color: var(--cor-escura);
-    color: var(--cor-branco);
+    background-color: var(--cor-escuro);
+    color: var(--cor-secundario);
 }
 
 #ancora {
     text-decoration: none;
-    color: var(--cor-vermelh);
+    color: var(--cor-amarelo);
     font-size: 20px;
     transition: color 0.3s ease;
 }
 
 #ancora:hover {
-    color: var(--cor-principal);
+    color:var(--cor-principal);
     cursor: pointer;
     text-decoration: underline;
 }
