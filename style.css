@@ -1,39 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 :root {
-    --cor-principal: #ffe6ff;
-    --cor-escuro: #51424e;
-    --cor-secundario: #ce42bb;
-    --cor-amarelo: #f9f871;
-    --cor-azul: #7779ff;
-    --cor-rosa: #ff77eda4;
-    --cor-beje: #ddd7c6;
+    --cor-principal: hsl(244, 59%, 64%);
+    --cor-escura: #354b45;
+    --cor-cinza: #98b0a9;
+    --cor-lilas: hsl(234, 92%, 74%);
+    --cor-preto: #000000;
+    --cor-branco: #FFFFFF;
 }
 
-#body {
-    background-color: var(--cor-muitoclaro);
+
+body {
+    margin: 0;
+    background: var(--cor-branco); /* AGORA TUDO É BRANCO */
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--cor-preto);
 }
+
+.titulo-secao {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+
+#topo {
+    background: var(--cor-lilas);
+    color: var(--cor-preto);
+}
+
+
+.habilidades-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.habilidade-item {
+    background: var(--cor-escura);
+    color: var(--cor-branco);
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.habilidade-item:hover {
+    background: var(--cor-principal);
+}
+
+
+#conteudo-branco {
+    background: var(--cor-branco) !important;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.card img {
+    border-bottom: 1px solid #eee;
+}
+
 
 #rodape {
-    background-color: var(--cor-escuro);
+    background: var(--cor-escura);
     color: var(--cor-branco);
-}
-
-#ancora {
-    text-decoration: none;
-    color: var(--cor-branco);
-    font-size: 18px;
-    transition: color 0.3s ease;
-
-}
-
-#ancora:hover {
-    color: var(--cor-branco);
-    cursor: pointer;
-    text-decoration: underline;
-
-}
-
-.habilidades {
-    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
